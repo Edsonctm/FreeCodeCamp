@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1 id="titulo">Formulário de pesquisa da FreeCodeCamp</h1>
+                <p id="descricao">Obrigado por disponibilizar um tempo para nos ajudar a melhorar a plataforma</p>
+            </header>
+            <form id="formulario-pesquisa">
+                <div class="formulario topo">
+                    <label for="name" id="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder=" Digite seu nome" required>
+                </div>
+                <div class="formulario topo">
+                    <label for="email" id="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder=" Digite seu e-mail" required>
+                </div>
+                <div class="formulario topo">
+                    <label for="age" id="age">Idade</label>
+                    <input type="number" name="age" id="age" min="01" max="130" placeholder=" Idade" required>
+                </div>
+                <div class="formulario select1">
+                    <p>Qual sua atual relação com a programação?</p>
+                    <select id="dropdown" name="role" required>
+                        <option disabled selected value>Selecione uma opção</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="estagio">Estagiário</option>
+                        <option value="programador">Programador CLT</option>
+                        <option value="autonomo">Programador autônomo</option>
+                        <option value="other">Outro</option>
+                      </select>
+                </div>
+                <div class="formulario radio">
+                    <p>Você recomendaria a FreeCodeCamp para um amigo?</p>
+                    <label class="radio">
+                        <input type="radio" name="recomendacao" value="certeza" class="input-radio" checked>Com Certeza
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="recomendacao" value="provavelmente" class="input-radio">Provavelmente
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="recomendacao" value="jamais" class="input-radio">Jamais
+                    </label>
+                </div>
+                <div class="formulario select2">
+                    <p>O que você mais gosta no FreeCodeCamp?</p>
+                    <select id="dropdown" name="role" required>
+                        <option disabled selected value>Selecione uma opção</option>
+                        <option value="desafios">Desafios</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="comunidade">Comunidade</option>
+                        <option value="open-source">Open Source</option>
+                      </select>
+                </div>
+                <div class="formulario">
+                    <p id="melhora">O que você gostaria que fosse melhorado na plataforma?</p> <span id="melhora">(marque todas que se aplicam)</span> <br>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="front-end">Projetos Front-End</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="back-end">Projetos Back-End</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="dados">Visualização dos dados</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="desafios">Desafios</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="Comunidade">Comunidade open source</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="Videos">Videos</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="encontros">Encontros Municipais</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="wiki">Wikipedia</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="forum">Fórum</label></div>
+                    <div class="divcheckbox"><label><input type="checkbox" name="melhorar" class="input-checkbox" value="mais-cursos">Cursos adicionais</label></div>
+                </div>
+                <div class="formulario2">
+                    <p>Envie seu comentário ou sugestão:</p>
+                    <textarea name="comentarios" id="comentarios" name="comentarios" placeholder="Digite aqui seu comentário ou sugestão..."></textarea>
+                </div>
+                <div class="formulario">
+                    <button type="submit" id="submit" class="submit">
+                        Enviar
+                      </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
