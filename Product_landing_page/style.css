@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&display=swap');
+
+* {
+    border: 0px;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;;
+}
+
+body{
+    background-color: rgb(155, 255, 222);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(107, 170, 149);
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#logosite {
+    display: flex;
+    align-items: center;
+}
+
+img#logotipo{
+    width: 60px;
+    height: 60px;
+}
+
+a#logopara {
+    display: inline-block;
+    color: white;
+    font-family: 'Great Vibes';
+    font-weight: 900;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px black;
+}
+
+div.navsite {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+div.navsite:hover {
+    text-decoration: underline;
+}
+
+p#p-top {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 120px;
+}
+
+div#cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input#email{
+    width: 250px;
+    height:25px;
+    text-align: center;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button#submit{
+    width: 200px;
+    height: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(255, 225, 57);
+    border-radius: 5px;
+}
+
+button#submit:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+img.imgvantagens{
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 100px;
+}
+
+div.container-vantagens{
+    padding-top: 100px;
+    max-width: 1000px;
+    min-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+div.cada-vantagem{
+    display: flex;
+    align-content: center;
+}
+
+div.icone{
+    display: inline-block;
+}
+
+h2.titulo-vantagens {
+    color: rgb(0, 0, 99);
+    font-size: 2.5em;
+    text-shadow: 2px 1px 1px white;
+    display: inline-block;
+    width: 50vw;
+}
+
+p.paragrafo-vantagens {
+    font-size: 1.2em;
+    display: inline-block;
+    justify-content: top;
+}
+
+div#funciona {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 50px 0px;
+}
+
+div#pacotes1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.pacotes {
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+h3.titulo-pacotes{
+    text-align: center;
+    background-color: rgb(73, 73, 255);
+    font-size: 2em;
+    margin: -10px -10px 0px -10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 7px 7px 0px 0px;
+}
+
+p.preco-pacote{
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 1px 1px black;
+    display: inline-block;
+}
+
+div.pacotes ul{
+    list-style-type: none;
+}
+
+div.pacotes span{
+    font-size: 0.7em;
+    color: gray;
+    font-style: italic;
+}
+
+div.pacotes li{
+    padding: 3px 0px;
+    margin-left: 5px;
+}
+
+div.pacotes li.disponivel{
+    color: green;
+}
+
+div.pacotes li.indisponivel {
+    color: gray;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+button.sct {
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+button.sct:hover {
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(49, 48, 48);
+    color: white;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer div{
+    display: inline-block;
+    padding: 0px 15px 0px 10px;
+}
+
+footer div>a{
+   color: white;
+   font-size: 0.8em;
+}
+
+footer div>a:hover{
+    text-decoration: underline;
+ }
+
+ footer span{
+    font-size: 0.8em;
+    margin-right: 10px;
+ }
